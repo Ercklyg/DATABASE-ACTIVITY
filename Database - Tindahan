@@ -1,0 +1,39 @@
+CREATE DATABASE sarisaristore;
+
+CREATE TABLE Tbltindahan (
+    ProductNo INT PRIMARY KEY auto_increment,
+    ProductName VARCHAR(50) not null,
+    ProductType VARCHAR(50) not null,
+    Price float not null,
+    Measurement VARCHAR(20) not null,
+    isPricy BOOLEAN
+);
+
+INSERT INTO Tbltindahan (ProductNo, ProductName, ProductType, Price, Measurement, isPricy)
+VALUES
+(1, 'Condensed Milk', 'Dairy', 50, 'Can', TRUE),
+(2, 'Evaporated Milk', 'Dairy', 30, 'Can', FALSE),
+(3, 'Sugar', 'Condiments', 14, 'Pack', FALSE),
+(4, 'Salt', 'Condiments', 10, 'Pack', FALSE),
+(5, 'Pepper', 'Condiments', 5, 'Pack', FALSE),
+(6, 'Cooking Oil', 'Cooking ingredient', 30, 'Bottle', TRUE),
+(7, 'Rice', 'Staple Food', 58, 'Kilo', TRUE),
+(8, 'Instant Noodles', 'Staple Food', 11, 'Piece', FALSE),
+(9, 'Dried Fish', 'Preserved Food', 10, 'Pack', FALSE),
+(10, 'Combi', 'Biscuits', 8, 'Piece', FALSE),
+(11, 'Maxx', 'Candy', 2, 'Piece', FALSE),
+(12, 'Crossini', 'Bread', 10, 'Piece', FALSE),
+(13, 'Coffee', 'Condiments', 25, 'Pack', FALSE),
+(14, 'Egg', 'Dairy', 10, 'Piece', FALSE),
+(15, 'Hotdog', 'Processed Food', 16, 'Piece', TRUE),
+(16, 'Soy Sauce', 'Condiments', 28, 'Bottle', TRUE),
+(17, 'Vinegar', 'Condiments', 28, 'Bottle', TRUE),
+(18, 'Sky Flakes', 'Biscuit', 8, 'Piece', FALSE),
+(19, 'Safeguard', 'Soap', 22, 'Piece', FALSE),
+(20, 'Silka', 'Soap', 28, 'Piece', TRUE),
+(21, '555 Sardines', 'Canned Food', 25, 'Can', TRUE),
+(22, 'Joy', 'Washing Soap', 8, 'Piece', FALSE),
+(23, 'Gin Bilog', 'Liquor', 70, 'Bottle', TRUE),
+(24, 'Royal', 'Drinks', 20, 'Bottle', FALSE),
+(25, 'Yakult', 'Drinks', 13, 'Piece', TRUE);
+
